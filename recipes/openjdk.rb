@@ -29,6 +29,9 @@ pkgs = value_for_platform(
   ["arch","freebsd"] => {
     "default" => ["openjdk#{jdk_version}"]
   },
+  ["ubuntu"] => {
+    "default" => ["openjdk-#{jdk_version}-jdk", "default-jre-headless"] 
+  },
   "default" => ["openjdk-#{jdk_version}-jdk"]
   )
 
